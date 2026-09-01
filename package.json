@@ -1,0 +1,15 @@
+{
+  "name": "student-grade-checker",
+  "version": "1.0.0",
+  "description": "This is a simple web page that allows you to check the grade ofa student based on their marks.",
+  "main": "script.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
