@@ -2,28 +2,28 @@ const test = require("node:test");
 const assert = require("node:assert");
 
 const { getGrade } = require("../script");
-
+//test cases for Gtrade A
 test("Grade A", () => {
     assert.strictEqual(getGrade(95), "A");
     assert.strictEqual(getGrade(90), "A");
 })
-
+//test cases for Gtrade A
 test("Grade B", () => {
     assert.strictEqual(getGrade(89), "B");
     assert.strictEqual(getGrade(80), "B");
 
 })
-
+//test cases for Gtrade A
 test("Grade C", () => {
     assert.strictEqual(getGrade(79), "C");
     assert.strictEqual(getGrade(70), "C");
 })
-
+//test cases for Gtrade D
 test("Grade D", () => {
     assert.strictEqual(getGrade(69), "D");
     assert.strictEqual(getGrade(60), "D");
 })
-
+//test cases for Gtrade F
 test("Grade F", () => {
     assert.strictEqual(getGrade(59), "F");
     assert.strictEqual(getGrade(0), "F");
