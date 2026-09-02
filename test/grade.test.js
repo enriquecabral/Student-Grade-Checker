@@ -4,7 +4,7 @@ const assert = require("node:assert");
 const { getGrade } = require("../script");
 
 test("Grade A", () => {
-    assert.strictEqual(getGrade(100), "B");
+    assert.strictEqual(getGrade(100), "A");
     assert.strictEqual(getGrade(90), "A");
 })
 
