@@ -8,7 +8,8 @@ on:
     pull_request:
         branches : 
             - main
-
+    
+    workflow_dispatch:
 
 
 jobs:
@@ -30,6 +31,14 @@ jobs:
             - name : Run Tests
               run: npm test
 
+    project-info:
+        runs-on: ubuntu-latest
+        steps:
+            - name : Checkout repository
+              uses: actions/checkout@v6
+
+            - name : Show Project Information 
+              run : echo 'Student Grade Checker Project'
 
             
     
