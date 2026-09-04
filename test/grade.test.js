@@ -35,3 +35,8 @@ test("Invalid Marks", () => {
 
 })
 console.log("All tests passed!");
+
+test("Invalid score", () => {
+    assert.strictEqual(getGrade("abc"), "Invalid Score");
+    assert.strictEqual(getGrade(NaN), "Invalid Score");
+});

@@ -1,6 +1,9 @@
 // Grade Calculation Logic
 
 function getGrade(marks) {
+    if (typeof marks !== "number" || Number.isNaN(marks)) {
+        return "Invalid Score";
+    }
     if (marks <= 100 && marks >= 90) {
         return "A";
     } else if (marks <= 89 && marks >= 80) {
@@ -21,9 +24,12 @@ function getGrade(marks) {
 }
 
 function checkGrade() {
-    const marks = document.getElementById("marks").value;
+    const studentName = document.getElementById("studentName").value;
+    const marks = Number(document.getElementById("marks").value);
     const grade = getGrade(marks);
-    document.getElementById("result").innerHTML = "Your grade is " + grade;
+
+    document.getElementById("result").innerHTML =
+        `Grade of ${studentName} is ${grade}`;
 }
 
 if (typeof module !== "undefined") {
