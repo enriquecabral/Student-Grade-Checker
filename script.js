@@ -23,14 +23,17 @@ function getGrade(marks) {
     }
 }
 
+
 function checkGrade() {
     const studentName = document.getElementById("studentName").value;
+    const subject = document.getElementById("subject").value;
     const marks = Number(document.getElementById("marks").value);
     const grade = getGrade(marks);
 
     document.getElementById("result").innerHTML =
-        `Grade of ${studentName} is ${grade}`;
+        `Grade of ${studentName} in ${subject} is ${grade}`;
 }
+
 
 if (typeof module !== "undefined") {
     module.exports = { getGrade };
